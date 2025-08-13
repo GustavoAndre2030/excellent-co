@@ -1,52 +1,136 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background: #ffffff; /* white background */
+    color: #004aad; /* dark blue text */
 }
+
 header {
-    background: #222;
-    color: #fff;
+    background: #ffffff; /* white header */
+    color: #004aad;
     padding: 10px 0;
     text-align: center;
+    border-bottom: 2px solid #d90429; /* red accent line */
 }
+
 nav a {
-    color: white;
+    color: #004aad;
     margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
 }
+
 nav a:hover {
-    text-decoration: underline;
+    color: #d90429; /* red on hover */
 }
+
 .hero {
     padding: 50px;
     text-align: center;
-    background: #0078d7;
-    color: white;
+    background: #004aad; /* blue hero section */
+    color: #ffffff;
 }
+
 section {
     padding: 20px;
-    background: white;
+    background: #ffffff;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    color: #004aad;
 }
+
 .gallery {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
+
 .gallery img {
     max-width: 300px;
     border-radius: 8px;
 }
+
 footer {
     text-align: center;
     padding: 10px;
-    background: #222;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background: #004aad;
+    color: #ffffff;
+    border-top: 2px solid #d90429;
 }
+
+/* Free Estimate button in nav */
+.free-estimate-btn {
+    background-color: #004aad; /* blue */
+    color: white;
+    padding: 10px 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.free-estimate-btn:hover {
+    background-color: #d90429; /* red hover */
+}
+
+/* Contact form styles */
+.area-note {
+  font-size: 1.05rem;
+  margin: 6px 0 18px;
+  text-align: center;
+}
+
+.info-block {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.06);
+  margin-bottom: 22px;
+}
+
+.estimate-form {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.estimate-form h3 {
+  margin-bottom: 12px;
+  color: #d90429; /* red heading */
+}
+
+.estimate-form label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+}
+
+.estimate-form input,
+.estimate-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.btn-full {
+  margin-top: 18px;
+  background: #004aad;
+  color: #fff;
+  border: none;
+  padding: 14px 18px;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  width: 100%;
+}
+
+.btn-full:hover { background: #d90429; }
